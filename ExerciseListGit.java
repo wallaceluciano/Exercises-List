@@ -1,5 +1,7 @@
 package Exercises;
 
+import java.util.Scanner;
+
 public class ExerciseListGit {
     public static void main(String[] args) {
 
@@ -316,6 +318,69 @@ public class ExerciseListGit {
 //            System.out.println("This is a Acutaneous triangle");
 //        }
 
+
+//        Faça um programa utilizando o comando “while”, que fica lendo números
+//        inteiros do teclado e só finaliza quando o número digitado for 10.
+//        Scanner scanner = new Scanner(System.in); // cria o objeto para ler entrada
+//        int number;
+//        do {
+//            System.out.print("Write a number: ");
+//            number = scanner.nextInt();
+//
+//        } while (number != 10);
+
+
+//        Faça um programa que lê dois números inteiros do teclado, testa se o
+//        primeiro é menor que o segundo, se for imprime todos os números do
+//            intervalo entre eles.
+//        int number1;
+//        int number2;
+//
+//
+//        do {
+//            Scanner scanner = new Scanner(System.in); // cria o objeto para ler entrada
+//            System.out.print("Write a number: ");
+//            number1 = scanner.nextInt();
+//            System.out.print("Write another number: ");
+//            number2 = scanner.nextInt();
+//        } while (number1 > number2);
+//
+//        for (int i = number1 + 1; i < number2; i++) {
+//            System.out.println(i);
+//
+//        } return;
+
+
+
+
+
+//        Faça um programa que lê um número real do teclado e utilizando o
+//        comando “while” calcula o fatorial deste número. (ex: 5! é igual a 5 * 4 * 3
+//                * 2 * 1).
+//        Scanner scanner = new Scanner(System.in); // cria o objeto para ler entrada
+//        System.out.print("Write a number: ");
+//        int number = scanner.nextInt();
+//        int fatorial = 1;
+//        do {
+//            fatorial = fatorial * number;
+//            number--;
+//        } while (number > 0);
+//        int resultado = fatorial;
+//        System.out.println(resultado);
+
+
+
+//          Resolution using For structure
+        Scanner scanner = new Scanner(System.in); // cria o objeto para ler entrada
+        System.out.print("Write a number: ");
+        int number = scanner.nextInt();
+        long fatorial = 1; // Usar long para resultados maiores que int
+
+        for (int i = number; i >1; i--) {
+            fatorial = fatorial * i;
+        }
+
+        System.out.println("O fatorial de " + number + " é: " + fatorial);
 
     }
 
